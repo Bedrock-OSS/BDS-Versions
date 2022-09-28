@@ -2,7 +2,7 @@ name: Fetch
 on:
   workflow_dispatch:
   schedule:
-    - cron: "* * * * *"
+    - cron: "*/10 * * * *"
 env:
   LINUX_PATH: linux
   WINDOWS_PATH: windows

@@ -3,9 +3,6 @@
 LINUX_PATH=linux
 WINDOWS_PATH=windows
 
-LINUX_MANIFEST_URL=https://minecraft.azureedge.net/bin-linux/MANIFEST_LINUX
-WINDOWS_MANIFEST_URL=https://minecraft.azureedge.net/bin-win/MANIFEST_WINDOWS
-
 LINUX_MANIFEST=`curl -s ${LINUX_MANIFEST_URL} | jq`
 WINDOWS_MANIFEST=`curl -s ${WINDOWS_MANIFEST_URL} | jq`
 

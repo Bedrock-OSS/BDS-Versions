@@ -55,4 +55,5 @@ jq -n \
 cat README.header.md > README.md
 
 echo "Latest Linux: \`$LINUX_STABLE_VERSION\`"     >> README.md
+echo ""     >> README.md
 echo "Latest Windows: \`$WINDOWS_STABLE_VERSION\`" >> README.md

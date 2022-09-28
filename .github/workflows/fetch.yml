@@ -1,0 +1,23 @@
+name: Fetch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "* * * * *"
+env:
+  LINUX_PATH: linux
+  WINDOWS_PATH: windows
+  LINUX_MANIFEST_URL: ${{ secrets.LINUX_MANIFEST_URL }}
+  WINDOWS_MANIFEST_URL: ${{ secrets.WINDOWS_MANIFEST_URL }}
+jobs:
+  Perform-Fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Perform fetch
+        run: ./fetch.sh
+      - name: Try commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: "Updated versions"

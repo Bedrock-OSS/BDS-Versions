@@ -16,4 +16,5 @@ echo "The latest Linux BDS is [${LATEST_VERSION}]"
 wget https://minecraft.azureedge.net/bin-linux/bedrock-server-${LATEST_VERSION}.zip
 ```
 Latest Linux: `1.19.30.04`
+
 Latest Windows: `1.19.30.04`

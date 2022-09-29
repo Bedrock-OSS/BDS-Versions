@@ -21,10 +21,16 @@ jobs:
         with:
           default_author: github_actions
           message: "Updated versions"
+      - name: Get app token
+        id: get_bot_token
+        uses: machine-learning-apps/actions-app-token@master
+        with:
+          APP_PEM: ${{ secrets.BDS_APP_PEM }}
+          APP_ID: ${{ secrets.BDS_APP_ID }}
       - name:
         uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.BDS_BOT_TOKEN }}
+          github-token: ${{ steps.get_bot_token.outputs.app_token }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'ScriptAPIOSS',

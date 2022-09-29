@@ -20,3 +20,14 @@ jobs:
         with:
           default_author: github_actions
           message: "Updated versions"
+      - name:
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'ScriptAPIOSS',
+              repo: 'BDS-OCI-testing',
+              workflow_id: 'build.yml',
+              ref: 'main'
+            })

@@ -24,11 +24,14 @@ jobs:
       - name:
         uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.BDS_BOT_TOKEN }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'ScriptAPIOSS',
               repo: 'BDS-OCI-testing',
               workflow_id: 'build.yml',
-              ref: 'main'
+              ref: 'main',
+              inputs: {
+                BDS_VERSION: '1.19.30.04'
+              },
             })

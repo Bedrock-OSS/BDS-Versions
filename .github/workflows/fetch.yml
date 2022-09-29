@@ -49,6 +49,6 @@ jobs:
               ref: 'main',
               inputs: {
                 BDS_VERSION: '${{needs.Perform-Fetch.outputs.LATEST_LINUX_VERSION}}',
-                USE_LATEST_TAG: true
+                USE_LATEST_TAG: "true"
               }
             })

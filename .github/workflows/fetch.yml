@@ -29,8 +29,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: Perform-Fetch
     steps:
-      - name: Test output
-        run: echo ${{needs.Perform-Fetch.outputs.LATEST_LINUX_VERSION}}
       - name: Get app token
         id: get_bot_token
         uses: machine-learning-apps/actions-app-token@master
@@ -48,6 +46,6 @@ jobs:
               workflow_id: 'build.yml',
               ref: 'main',
               inputs: {
-                BDS_VERSION: '1.19.30.04'
+                BDS_VERSION: '${{needs.Perform-Fetch.outputs.LATEST_LINUX_VERSION}}'
               }
             })

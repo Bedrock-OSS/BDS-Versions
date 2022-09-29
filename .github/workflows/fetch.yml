@@ -1,4 +1,5 @@
-name: Fetch
+name: Scrape
+run-name: Scrape [${{ github.GITHUB_RUN_ID }}]
 on:
   workflow_dispatch:
   schedule:

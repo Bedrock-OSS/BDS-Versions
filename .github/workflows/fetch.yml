@@ -38,7 +38,7 @@ jobs:
         with:
           APP_PEM: ${{ secrets.BDS_APP_PEM }}
           APP_ID: ${{ secrets.BDS_APP_ID }}
-      - name:
+      - name: Trigger OCI build workflow
         uses: actions/github-script@v6
         with:
           github-token: ${{ steps.get_bot_token.outputs.app_token }}

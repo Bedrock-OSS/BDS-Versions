@@ -1,5 +1,6 @@
 name: Fetch
 on:
+  workflow_dispatch:
   schedule:
     - cron: "*/10 * * * *"
 env:

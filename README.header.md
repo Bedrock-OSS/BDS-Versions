@@ -13,5 +13,7 @@ LATEST_VERSION=`curl -s https://raw.githubusercontent.com/ScriptAPIOSS/BDS-Versi
 
 echo "The latest Linux BDS is [${LATEST_VERSION}]"
 
-wget https://minecraft.azureedge.net/bin-linux/bedrock-server-${LATEST_VERSION}.zip
+DOWNLOAD_URL=`curl -s https://raw.githubusercontent.com/ScriptAPIOSS/BDS-Versions/main/linux/${LATEST_VERSION}.json | jq -r '.download_url'`
+
+wget ${DOWNLOAD_URL}
 ```

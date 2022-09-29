@@ -5,6 +5,9 @@ RELEASE_NOTES_PATH=release_notes
 LINUX_PATH=linux
 WINDOWS_PATH=windows
 
+LAST_KNOWN_LINUX_STABLE_VERSION=`cat versions.json | jq -r '.linux.stable'`
+LAST_KNOWN_WINDOWS_STABLE_VERSION=`cat versions.json | jq -r '.windows.stable'`
+
 LINUX_MANIFEST=`curl -s ${LINUX_MANIFEST_URL} | jq`
 WINDOWS_MANIFEST=`curl -s ${WINDOWS_MANIFEST_URL} | jq`
 
@@ -44,6 +47,14 @@ for filename in ${WINDOWS_PATH}/*.json; do
 
     WINDOWS_VERSIONS[${#WINDOWS_VERSIONS[@]}]="${filename}"
 done
+
+if [ "$LAST_KNOWN_LINUX_STABLE_VERSION" == "$LINUX_STABLE_VERSION" ]; then
+  echo "No change in linux stable version"
+  echo "::set-output name=trigger_linux_stable_build::false"
+else
+  echo "New version of linux stable detected [${LAST_KNOWN_LINUX_STABLE_VERSION}] -> [${LINUX_STABLE_VERSION}]"
+  echo "::set-output name=trigger_linux_stable_build::true"
+fi
 
 echo "::set-output name=latest_linux_version::${LINUX_STABLE_VERSION}"
 echo "::set-output name=latest_windows_version::${WINDOWS_STABLE_VERSION}"

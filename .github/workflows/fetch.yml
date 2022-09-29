@@ -48,6 +48,7 @@ jobs:
               workflow_id: 'build.yml',
               ref: 'main',
               inputs: {
-                BDS_VERSION: '${{needs.Perform-Fetch.outputs.LATEST_LINUX_VERSION}}'
+                BDS_VERSION: '${{needs.Perform-Fetch.outputs.LATEST_LINUX_VERSION}}',
+                USE_LATEST_TAG: true
               }
             })

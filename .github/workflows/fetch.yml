@@ -33,5 +33,5 @@ jobs:
               ref: 'main',
               inputs: {
                 BDS_VERSION: '1.19.30.04'
-              },
+              }
             })

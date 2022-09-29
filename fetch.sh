@@ -45,6 +45,9 @@ for filename in ${WINDOWS_PATH}/*.json; do
     WINDOWS_VERSIONS[${#WINDOWS_VERSIONS[@]}]="${filename}"
 done
 
+echo "::set-output name=latest_linux_version::${LINUX_STABLE_VERSION}"
+echo "::set-output name=latest_windows_version::${WINDOWS_STABLE_VERSION}"
+
 jq -n \
   --arg linux_stable "$LINUX_STABLE_VERSION" \
   --arg windows_stable "$WINDOWS_STABLE_VERSION" \

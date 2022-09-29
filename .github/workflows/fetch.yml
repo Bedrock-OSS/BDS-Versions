@@ -44,7 +44,7 @@ jobs:
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'ScriptAPIOSS',
-              repo: 'BDS-OCI-testing',
+              repo: 'BDS-OCI',
               workflow_id: 'build.yml',
               ref: 'main',
               inputs: {

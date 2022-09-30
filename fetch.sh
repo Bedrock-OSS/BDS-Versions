@@ -71,11 +71,11 @@ jq -n \
 {
   "linux": {
     "stable": ($linux_stable),
-    "versions": [($linux_versions)]
+    "versions": ($linux_versions)
   },
   "windows": {
     "stable": ($windows_stable),
-    "versions": [($windows_versions)]
+    "versions": ($windows_versions)
   },
 }
 ' > versions.json

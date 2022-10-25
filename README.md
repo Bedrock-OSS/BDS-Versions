@@ -17,6 +17,6 @@ DOWNLOAD_URL=`curl -s https://raw.githubusercontent.com/ScriptAPIOSS/BDS-Version
 
 wget ${DOWNLOAD_URL}
 ```
-Latest Linux: `1.19.31.01`
+Latest Linux: `1.19.40.02`
 
-Latest Windows: `1.19.31.01`
+Latest Windows: `1.19.40.02`

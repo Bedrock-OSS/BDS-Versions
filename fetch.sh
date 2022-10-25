@@ -50,14 +50,14 @@ done
 
 if [ "$LAST_KNOWN_LINUX_STABLE_VERSION" == "$LINUX_STABLE_VERSION" ]; then
   echo "No change in linux stable version"
-  echo "::set-output name=trigger_linux_stable_build::false"
+  echo "trigger_linux_stable_build=false" >> $GITHUB_OUTPUT
 else
   echo "New version of linux stable detected [${LAST_KNOWN_LINUX_STABLE_VERSION}] -> [${LINUX_STABLE_VERSION}]"
-  echo "::set-output name=trigger_linux_stable_build::true"
+  echo "trigger_linux_stable_build=true" >> $GITHUB_OUTPUT
 fi
 
-echo "::set-output name=latest_linux_version::${LINUX_STABLE_VERSION}"
-echo "::set-output name=latest_windows_version::${WINDOWS_STABLE_VERSION}"
+echo "latest_linux_version=${LINUX_STABLE_VERSION}" >> $GITHUB_OUTPUT
+echo "latest_windows_version=${WINDOWS_STABLE_VERSION}" >> $GITHUB_OUTPUT
 
 LINUX_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${LINUX_VERSIONS[@]}"`
 WINDOWS_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${WINDOWS_VERSIONS[@]}"`

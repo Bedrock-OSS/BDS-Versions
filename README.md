@@ -1,14 +1,17 @@
 # Minecraft BDS versions
 
 <table align="right">
-  <tr><th colspan=2><strong>Latest Version</strong></th></tr>
-  <tr><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
+  <tr><th colspan=2><strong>⚠️ Latest Version ⚠️</strong></th></tr>
+  <tr><th><strong>Linux 🐧</strong></th><th><strong>Windows 🪟</strong></th></tr>
   <tr><td>1.19.40.02</td><td>1.19.40.02</td></tr>
 </table>
 
 This repository acts as an automatic archive of BDS versions.
 You can consume the `versions.json` file to get the stable build
 and a history of versions.
+
+OCI images are built automatically on detection of a new version.
+You can view those over [Here](https://github.com/ScriptAPIOSS/BDS-OCI).
 
 An example to get the latest stable build:
 

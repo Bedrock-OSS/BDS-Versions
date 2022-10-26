@@ -80,6 +80,4 @@ jq -n \
 }
 ' > versions.json
 
-chmod +x readme.sh
-
-./readme.sh
+./readme.sh $LINUX_STABLE_VERSION $WINDOWS_STABLE_VERSION

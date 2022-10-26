@@ -1,5 +1,8 @@
 #!/bin/bash
 
+LINUX_STABLE_VERSION=$1
+WINDOWS_STABLE_VERSION=$2
+
 rm README.md
 
 echo "# Minecraft BDS versions" >> README.md
@@ -11,3 +14,4 @@ echo "  <tr><td>$LINUX_STABLE_VERSION</td><td>$WINDOWS_STABLE_VERSION</td></tr>"
 echo "</table>" >> README.md
 echo "" >> README.md
 cat ./README/core.header >> README.md
+echo "" >> README.md

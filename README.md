@@ -11,7 +11,7 @@ You can consume the `versions.json` file to get the stable build
 and a history of versions.
 
 OCI images are built automatically on detection of a new version.
-You can view those over [Here](https://github.com/ScriptAPIOSS/BDS-OCI).
+You can view those over [HERE](https://github.com/ScriptAPIOSS/BDS-OCI).
 
 An example to get the latest stable build:
 

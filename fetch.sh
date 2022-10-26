@@ -82,6 +82,9 @@ jq -n \
 
 cat README.header.md > README.md
 
-echo "Latest Linux: \`$LINUX_STABLE_VERSION\`"     >> README.md
-echo ""     >> README.md
-echo "Latest Windows: \`$WINDOWS_STABLE_VERSION\`" >> README.md
+
+echo "<table align=\"right\">" >> README.md
+echo "  <tr><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>" >> README.md
+echo "  <tr><td>$LINUX_STABLE_VERSION</td><td>$WINDOWS_STABLE_VERSION</td></tr>" >> README.md
+echo "</table>" >> README.md
+

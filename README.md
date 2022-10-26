@@ -1,9 +1,10 @@
+# Minecraft BDS versions
+
 <table align="right">
   <tr><th colspan=2><strong>Latest Version</strong></th></tr>
   <tr><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
-  <tr><td>1.19.40.02</td><td>1.19.40.02</td></tr>
+  <tr><td></td><td></td></tr>
 </table>
-<h1>Minecraft BDS versions</h1>
 
 This repository acts as an automatic archive of BDS versions.
 You can consume the `versions.json` file to get the stable build

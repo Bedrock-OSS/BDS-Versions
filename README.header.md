@@ -1,4 +1,4 @@
-# Minecraft BDS versions
+<h1>Minecraft BDS versions</h1>
 
 This repository acts as an automatic archive of BDS versions.
 You can consume the `versions.json` file to get the stable build

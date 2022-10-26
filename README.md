@@ -1,8 +1,8 @@
 # Minecraft BDS versions
 
 <table align="right">
-  <tr><th colspan=2><strong>⚠️ Latest Version ⚠️</strong></th></tr>
-  <tr><th><strong>Linux 🐧</strong></th><th><strong>Windows 🪟</strong></th></tr>
+  <tr><th colspan=2><strong>Latest Version</strong></th></tr>
+  <tr><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
   <tr><td>1.19.40.02</td><td>1.19.40.02</td></tr>
 </table>
 

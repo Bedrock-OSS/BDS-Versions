@@ -3,7 +3,7 @@
 <table align="right">
   <tr><th colspan=2><strong>Latest Version</strong></th></tr>
   <tr><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
-  <tr><td></td><td></td></tr>
+  <tr><td>1.19.40.02</td><td>1.19.40.02</td></tr>
 </table>
 
 This repository acts as an automatic archive of BDS versions.
@@ -23,3 +23,4 @@ DOWNLOAD_URL=`curl -s https://raw.githubusercontent.com/ScriptAPIOSS/BDS-Version
 
 wget ${DOWNLOAD_URL}
 ```
+

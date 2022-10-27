@@ -7,7 +7,7 @@ jobs:
   Perform-Fetch:
     outputs:
       LATEST_LINUX_VERSION: ${{ steps.fetch.outputs.latest_linux_version }}
-      LATEST_PREVIEW_VERSION: ${{ steps.fetch.outputs.latest_preview_version }}
+      LATEST_PREVIEW_VERSION: ${{ steps.fetch.outputs.latest_linux_preview_version }}
       LATEST_WINDOWS_VERSION: ${{ steps.fetch.outputs.latest_windows_version }}
       TRIGGER_LINUX_STABLE_BUILD: ${{ steps.fetch.outputs.trigger_linux_stable_build }}
       TRIGGER_LINUX_PREVIEW_BUILD: ${{ steps.fetch.outputs.trigger_linux_preview_build }}

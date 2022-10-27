@@ -1,9 +1,9 @@
 # Minecraft BDS versions
 
 <table align="right">
-  <tr><th colspan=2><strong>Latest Version</strong></th></tr>
-  <tr><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
-  <tr><td>1.19.40.02</td><td>1.19.40.02</td></tr>
+  <tr>Version<th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
+  <tr><strong>Stable</strong><td>1.19.40.02</td><td>1.19.40.02</td></tr>
+  <tr><strong>Preview</strong><td>1.19.50.21</td><td>1.19.50.21</td></tr>
 </table>
 
 This repository acts as an automatic archive of BDS versions.

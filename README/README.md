@@ -1,0 +1,1 @@
+This folder is not meant for reading, it's just a convenient place for snippets of the README.md file :)

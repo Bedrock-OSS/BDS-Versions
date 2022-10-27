@@ -17,10 +17,10 @@ jobs:
         id: fetch
         run: ./fetch.sh
         env:
-          LINUX_PATH: linux
-          WINDOWS_PATH: windows
           LINUX_MANIFEST_URL: ${{ secrets.LINUX_MANIFEST_URL }}
           WINDOWS_MANIFEST_URL: ${{ secrets.WINDOWS_MANIFEST_URL }}
+          LINUX_PREVIEW_MANIFEST_URL: ${{ secrets.LINUX_PREVIEW_MANIFEST_URL }}
+          WINDOWS_PREVIEW_MANIFEST_URL: ${{ secrets.WINDOWS_PREVIEW_MANIFEST_URL }}
       - name: Try commit
         uses: EndBug/add-and-commit@v9
         with:

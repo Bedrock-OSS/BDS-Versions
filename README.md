@@ -2,8 +2,8 @@
 
 <table align="right">
   <tr>Version<th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
-  <tr><td><strong>Stable</strong></td><td></td><td></td></tr>
-  <tr><td><strong>Preview</strong></td><td></td><td></td></tr>
+  <tr><td><strong>Stable</strong></td><td>```\n1.19.40.02\n```</td><td>```\n1.19.41.01\n```</td></tr>
+  <tr><td><strong>Preview</strong></td><td>```\n1.19.50.21\n```</td><td>```\n1.19.50.21\n```</td></tr>
 </table>
 
 This repository acts as an automatic archive of BDS versions.

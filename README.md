@@ -3,34 +3,37 @@
 <table align="right">
   <tr>Version<th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
   <tr><td><strong>Stable</strong></td>
-<td><br />
+  <td>
+
 ```bash
 1.19.40.02
 ```
 
-</td>
-<td><br />
+  </td>
+  <td>
+
 ```bash
 1.19.41.01
 ```
 
-</td>
-</tr>
-
+  </td>
+  </tr>
   <tr><td><strong>Preview</strong></td>
-<td><br />
+  <td>
+
 ```bash
 1.19.50.21
 ```
 
-</td>
-<td><br />
+  </td>
+  <td>
+
 ```bash
 1.19.50.21
 ```
 
-</td>
-</tr>
+  </td>
+  </tr>
 
 </table>
 

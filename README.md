@@ -3,15 +3,13 @@
 <table align="right">
   <tr>Version<th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
   <tr><td><strong>Stable</strong></td>
-<td>
-
+<td><br />
 ```bash
 1.19.40.02
 ```
 
 </td>
-<td>
-
+<td><br />
 ```bash
 1.19.41.01
 ```
@@ -20,15 +18,13 @@
 </tr>
 
   <tr><td><strong>Preview</strong></td>
-<td>
-
+<td><br />
 ```bash
 1.19.50.21
 ```
 
 </td>
-<td>
-
+<td><br />
 ```bash
 1.19.50.21
 ```

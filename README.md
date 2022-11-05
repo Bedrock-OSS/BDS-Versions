@@ -5,26 +5,26 @@
   <tr><td><strong>Stable</strong></td><td>
 
 ```bash
-1.19.40.02
+1.19.40.02```
 
-```</td><td>
+</td><td>
 
 ```bash
-1.19.41.01
+1.19.41.01```
 
-```</td></tr>
+</td></tr>
 
   <tr><td><strong>Preview</strong></td><td>
 
 ```bash
-1.19.50.21
+1.19.50.21```
 
-```</td><td>
+</td><td>
 
 ```bash
-1.19.50.21
+1.19.50.21```
 
-```</td></tr>
+</td></tr>
 
 </table>
 

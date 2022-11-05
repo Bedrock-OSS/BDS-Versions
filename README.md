@@ -1,5 +1,6 @@
 # Minecraft BDS versions
 
+<table align="right">
   <tr>Version<th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
 <tr><td><strong>Stable</strong></td>
 <td>

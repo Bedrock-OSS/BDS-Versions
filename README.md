@@ -13,6 +13,7 @@
 1.19.41.01
 
 ```</td></tr>
+
   <tr><td><strong>Preview</strong></td><td>
 
 ```bash
@@ -24,6 +25,7 @@
 1.19.50.21
 
 ```</td></tr>
+
 </table>
 
 This repository acts as an automatic archive of BDS versions.

@@ -53,7 +53,8 @@ jobs:
                 BDS_VERSION: '${{needs.Perform-Fetch.outputs.LATEST_LINUX_VERSION}}',
                 USE_LATEST_TAG: "true",
                 USE_STABLE_TAG: "true",
-                USE_PREVIEW_TAG: "false"
+                USE_PREVIEW_TAG: "false",
+                DUMP_DEFAULTS: "false"
               }
             })
   Trigger-Preview-Build:
@@ -81,6 +82,7 @@ jobs:
                 BDS_VERSION: '${{needs.Perform-Fetch.outputs.LATEST_PREVIEW_VERSION}}',
                 USE_LATEST_TAG: "false",
                 USE_STABLE_TAG: "false",
-                USE_PREVIEW_TAG: "true"
+                USE_PREVIEW_TAG: "true",
+                DUMP_DEFAULTS: "true"
               }
             })

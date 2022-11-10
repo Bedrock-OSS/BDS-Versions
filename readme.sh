@@ -11,8 +11,8 @@ echo "# Minecraft BDS versions" >> README.md
 echo "" >> README.md
 echo "<table align=\"right\">" >> README.md
 echo "  <tr>Version<th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>" >> README.md
-echo -e  "<tr><td><strong>Stable</strong></td>\n<td>\n\n\`\`\`bash\n$LINUX_STABLE_VERSION\n\`\`\`\n\n</td>\n<td>\n\n\`\`\`bash\n$WINDOWS_STABLE_VERSION\n\`\`\`\n\n</td>\n</tr>" >> README.md
-echo -e  "<tr><td><strong>Preview</strong></td>\n<td>\n\n\`\`\`bash\n$LINUX_PREVIEW_VERSION\n\`\`\`\n\n</td>\n<td>\n\n\`\`\`bash\n$WINDOWS_PREVIEW_VERSION\n\`\`\`\n\n</td>\n</tr>" >> README.md
+echo -e  "<tr><td><strong>Stable</strong></td>\n<td>\n<code>$LINUX_STABLE_VERSION</code>\n</td>\n<td>\n<code>$WINDOWS_STABLE_VERSION</code>\n</td>\n</tr>" >> README.md
+echo -e  "<tr><td><strong>Preview</strong></td>\n<td>\n<code>$LINUX_PREVIEW_VERSION</code>\n</td>\n<td>\n<code>$WINDOWS_PREVIEW_VERSION</code>\n</td>\n</tr>" >> README.md
 echo "</table>" >> README.md
 echo "" >> README.md
 cat ./README/core.header >> README.md

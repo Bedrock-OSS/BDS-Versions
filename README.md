@@ -1,7 +1,7 @@
 # Minecraft BDS versions
 
 <table align="right">
-  <tr>Version<th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
+  <tr><th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
 <tr><td><strong>Stable</strong></td>
 <td>
 <code>1.19.41.01</code>
@@ -32,11 +32,11 @@ An example to get the latest stable build:
 ```bash
 #!/bin/bash
 
-LATEST_VERSION=`curl -s https://raw.githubusercontent.com/ScriptAPIOSS/BDS-Versions/main/versions.json | jq -r '.linux.stable'`
+LATEST_VERSION=`curl -s https://raw.githubusercontent.com/Bedrock-OSS/BDS-Versions/main/versions.json | jq -r '.linux.stable'`
 
 echo "The latest Linux BDS is [${LATEST_VERSION}]"
 
-DOWNLOAD_URL=`curl -s https://raw.githubusercontent.com/ScriptAPIOSS/BDS-Versions/main/linux/${LATEST_VERSION}.json | jq -r '.download_url'`
+DOWNLOAD_URL=`curl -s https://raw.githubusercontent.com/Bedrock-OSS/BDS-Versions/main/linux/${LATEST_VERSION}.json | jq -r '.download_url'`
 
 wget ${DOWNLOAD_URL}
 ```

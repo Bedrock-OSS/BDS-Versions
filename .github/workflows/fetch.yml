@@ -11,7 +11,7 @@ jobs:
       LATEST_WINDOWS_VERSION: ${{ steps.fetch.outputs.latest_windows_version }}
       TRIGGER_LINUX_STABLE_BUILD: ${{ steps.fetch.outputs.trigger_linux_stable_build }}
       TRIGGER_LINUX_PREVIEW_BUILD: ${{ steps.fetch.outputs.trigger_linux_preview_build }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

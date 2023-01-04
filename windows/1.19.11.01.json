@@ -1,4 +1,7 @@
 {
+    "date": "2022-07-26T15:38:45",
     "version": "1.19.11.01",
+    "platform": "windows",
+    "size_in_bytes": 48777327,
     "download_url": "https://minecraft.azureedge.net/bin-win/bedrock-server-1.19.11.01.zip"
 }

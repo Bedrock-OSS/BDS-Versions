@@ -1,4 +1,7 @@
 {
+    "date": "2018-10-16T16:08:48",
     "version": "1.7.0.13",
+    "platform": "linux",
+    "size_in_bytes": 17838338,
     "download_url": "https://minecraft.azureedge.net/bin-linux/bedrock-server-1.7.0.13.zip"
 }

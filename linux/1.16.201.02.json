@@ -1,4 +1,7 @@
 {
+    "date": "2020-12-15T16:45:24",
     "version": "1.16.201.02",
+    "platform": "linux",
+    "size_in_bytes": 89832697,
     "download_url": "https://minecraft.azureedge.net/bin-linux/bedrock-server-1.16.201.02.zip"
 }

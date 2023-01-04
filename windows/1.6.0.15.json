@@ -1,4 +1,7 @@
 {
+    "date": "2018-08-28T12:26:25",
     "version": "1.6.0.15",
+    "platform": "windows",
+    "size_in_bytes": 42216524,
     "download_url": "https://minecraft.azureedge.net/bin-win/bedrock-server-1.6.0.15.zip"
 }

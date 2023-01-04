@@ -1,4 +1,7 @@
 {
+    "date": "2019-12-18T16:27:01",
     "version": "1.14.1.4",
+    "platform": "linux",
+    "size_in_bytes": 49395245,
     "download_url": "https://minecraft.azureedge.net/bin-linux/bedrock-server-1.14.1.4.zip"
 }

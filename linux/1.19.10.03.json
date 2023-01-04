@@ -1,5 +1,7 @@
 {
-  "date": "2022-01-00T00:00:00",
-  "version": "1.19.10.03",
-  "download_url": "https://minecraft.azureedge.net/bin-linux/bedrock-server-1.19.10.03.zip"
+    "date": "2022-07-12T15:49:57",
+    "version": "1.19.10.03",
+    "platform": "linux",
+    "size_in_bytes": 73426046,
+    "download_url": "https://minecraft.azureedge.net/bin-linux/bedrock-server-1.19.10.03.zip"
 }

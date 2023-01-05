@@ -110,15 +110,20 @@ LINUX_PREVIEW_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional'
 WINDOWS_STABLE_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${WINDOWS_STABLE_VERSIONS[@]}"`
 WINDOWS_PREVIEW_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${WINDOWS_PREVIEW_VERSIONS[@]}"`
 
+LINUX_STABLE_VERSIONS_JSON_SORT=`echo ${LINUX_STABLE_VERSIONS_JSON} | jq 'sort_by(. | split(".") | map(tonumber))'`
+LINUX_PREVIEW_VERSIONS_JSON_SORT=`echo ${LINUX_PREVIEW_VERSIONS_JSON} | jq 'sort_by(. | split(".") | map(tonumber))'`
+WINDOWS_STABLE_VERSIONS_JSON_SORT=`echo ${WINDOWS_STABLE_VERSIONS_JSON} | jq 'sort_by(. | split(".") | map(tonumber))'`
+WINDOWS_PREVIEW_VERSIONS_JSON_SORT=`echo ${WINDOWS_PREVIEW_VERSIONS_JSON} | jq 'sort_by(. | split(".") | map(tonumber))'`
+
 jq -n \
   --arg linux_stable "$LINUX_STABLE_VERSION" \
   --arg windows_stable "$WINDOWS_STABLE_VERSION" \
   --arg linux_preview "$LINUX_PREVIEW_VERSION" \
   --arg windows_preview "$WINDOWS_PREVIEW_VERSION" \
-  --argjson LINUX_STABLE_VERSIONS "${LINUX_STABLE_VERSIONS_JSON}" \
-  --argjson WINDOWS_STABLE_VERSIONS "${WINDOWS_STABLE_VERSIONS_JSON}" \
-  --argjson LINUX_PREVIEW_VERSIONS "${LINUX_PREVIEW_VERSIONS_JSON}" \
-  --argjson WINDOWS_PREVIEW_VERSIONS "${WINDOWS_PREVIEW_VERSIONS_JSON}" \
+  --argjson LINUX_STABLE_VERSIONS "${LINUX_STABLE_VERSIONS_JSON_SORT}" \
+  --argjson WINDOWS_STABLE_VERSIONS "${WINDOWS_STABLE_VERSIONS_JSON_SORT}" \
+  --argjson LINUX_PREVIEW_VERSIONS "${LINUX_PREVIEW_VERSIONS_JSON_SORT}" \
+  --argjson WINDOWS_PREVIEW_VERSIONS "${WINDOWS_PREVIEW_VERSIONS_JSON_SORT}" \
 '
 {
   "linux": {

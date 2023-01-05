@@ -15,7 +15,7 @@
 <code>1.19.60.25</code>
 </td>
 <td>
-<code>1.19.60.24</code>
+<code>1.19.60.25</code>
 </td>
 </tr>
 </table>

@@ -105,25 +105,25 @@ echo "latest_linux_preview_version=${LINUX_PREVIEW_VERSION}" >> $GITHUB_OUTPUT
 echo "latest_windows_version=${WINDOWS_STABLE_VERSION}" >> $GITHUB_OUTPUT
 echo "latest_windows_preview_version=${WINDOWS_PREVIEW_VERSION}" >> $GITHUB_OUTPUT
 
-LINUX_STABLE_VERSIONS_SORT=( $(printf "%s\n" "${LINUX_STABLE_VERSIONS[@]}" | sort -V) )
-LINUX_PREVIEW_VERSIONS_SORT=( $(printf "%s\n" "${LINUX_PREVIEW_VERSIONS[@]}" | sort -V) )
-WINDOWS_STABLE_VERSIONS_SORT=( $(printf "%s\n" "${WINDOWS_STABLE_VERSIONS[@]}" | sort -V) )
-WINDOWS_PREVIEW_VERSIONS_SORT=( $(printf "%s\n" "${WINDOWS_PREVIEW_VERSIONS[@]}" | sort -V) )
+LINUX_STABLE_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${LINUX_STABLE_VERSIONS[@]}"`
+LINUX_PREVIEW_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${LINUX_PREVIEW_VERSIONS[@]}"`
+WINDOWS_STABLE_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${WINDOWS_STABLE_VERSIONS[@]}"`
+WINDOWS_PREVIEW_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${WINDOWS_PREVIEW_VERSIONS[@]}"`
 
-LINUX_STABLE_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${LINUX_STABLE_VERSIONS_SORT[@]}"`
-LINUX_PREVIEW_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${LINUX_PREVIEW_VERSIONS_SORT[@]}"`
-WINDOWS_STABLE_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${WINDOWS_STABLE_VERSIONS_SORT[@]}"`
-WINDOWS_PREVIEW_VERSIONS_JSON=`jq --compact-output --null-input '$ARGS.positional' --args -- "${WINDOWS_PREVIEW_VERSIONS_SORT[@]}"`
+LINUX_STABLE_VERSIONS_JSON_SORT=`echo ${LINUX_STABLE_VERSIONS_JSON} | jq 'sort_by(. | split(".") | map(tonumber))'`
+LINUX_PREVIEW_VERSIONS_JSON_SORT=`echo ${LINUX_PREVIEW_VERSIONS_JSON} | jq 'sort_by(. | split(".") | map(tonumber))'`
+WINDOWS_STABLE_VERSIONS_JSON_SORT=`echo ${WINDOWS_STABLE_VERSIONS_JSON} | jq 'sort_by(. | split(".") | map(tonumber))'`
+WINDOWS_PREVIEW_VERSIONS_JSON_SORT=`echo ${WINDOWS_PREVIEW_VERSIONS_JSON} | jq 'sort_by(. | split(".") | map(tonumber))'`
 
 jq -n \
   --arg linux_stable "$LINUX_STABLE_VERSION" \
   --arg windows_stable "$WINDOWS_STABLE_VERSION" \
   --arg linux_preview "$LINUX_PREVIEW_VERSION" \
   --arg windows_preview "$WINDOWS_PREVIEW_VERSION" \
-  --argjson LINUX_STABLE_VERSIONS "${LINUX_STABLE_VERSIONS_JSON}" \
-  --argjson WINDOWS_STABLE_VERSIONS "${WINDOWS_STABLE_VERSIONS_JSON}" \
-  --argjson LINUX_PREVIEW_VERSIONS "${LINUX_PREVIEW_VERSIONS_JSON}" \
-  --argjson WINDOWS_PREVIEW_VERSIONS "${WINDOWS_PREVIEW_VERSIONS_JSON}" \
+  --argjson LINUX_STABLE_VERSIONS "${LINUX_STABLE_VERSIONS_JSON_SORT}" \
+  --argjson WINDOWS_STABLE_VERSIONS "${WINDOWS_STABLE_VERSIONS_JSON_SORT}" \
+  --argjson LINUX_PREVIEW_VERSIONS "${LINUX_PREVIEW_VERSIONS_JSON_SORT}" \
+  --argjson WINDOWS_PREVIEW_VERSIONS "${WINDOWS_PREVIEW_VERSIONS_JSON_SORT}" \
 '
 {
   "linux": {

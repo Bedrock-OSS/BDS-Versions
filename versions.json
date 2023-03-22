@@ -1,6 +1,6 @@
 {
   "linux": {
-    "stable": "1.19.72.01",
+    "stable": "",
     "preview": "1.19.80.22",
     "versions": [
       "1.6.0.15",

@@ -4,10 +4,10 @@
   <tr><th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
 <tr><td><strong>Stable</strong></td>
 <td>
-<code>1.20.11.01</code>
+<code>1.20.12.01</code>
 </td>
 <td>
-<code>1.20.11.01</code>
+<code>1.20.12.01</code>
 </td>
 </tr>
 <tr><td><strong>Preview</strong></td>

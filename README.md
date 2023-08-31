@@ -12,10 +12,10 @@
 </tr>
 <tr><td><strong>Preview</strong></td>
 <td>
-<code>1.20.30.24</code>
+<code>1.20.30.25</code>
 </td>
 <td>
-<code>1.20.30.24</code>
+<code>1.20.30.25</code>
 </td>
 </tr>
 </table>

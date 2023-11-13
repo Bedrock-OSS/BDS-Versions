@@ -43,4 +43,5 @@ wget ${DOWNLOAD_URL}
 
 ## People using this repo
 - [@DarkGamerYT - MinecraftUpdatesBot](https://github.com/DarkGamerYT/MinecraftUpdatesBot)
+- [Gamemode One](https://github.com/Gamemode-One)
 

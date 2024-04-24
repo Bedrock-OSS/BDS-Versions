@@ -1,0 +1,12 @@
+March 2020 Dedicated Server Release.
+
+	- Make sure to check the how-to document that comes with this release
+	- File bugs at https://bugs.mojang.com/projects/BDS/issues
+
+Stability release
+* Many bug fixes.
+* New crash handling telemetry system.
+* Server authoritative inventory: most inventory transactions now happen on the server to prevent cheating.
+	- Unlike server authoritative movement this can not be disabled: we are deprecating support for client-side inventory handling.
+* Server authoritative movement is still in-progress; we recommend not using it in this release.
+

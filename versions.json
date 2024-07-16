@@ -200,7 +200,7 @@
     ]
   },
   "windows": {
-    "stable": "1.21.3.01",
+    "stable": "",
     "preview": "1.21.20.22",
     "versions": [
       "1.6.0.15",

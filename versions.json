@@ -1,7 +1,7 @@
 {
   "linux": {
-    "stable": "",
-    "preview": "",
+    "stable": "1.21.3.01",
+    "preview": "1.21.20.22",
     "versions": [
       "1.6.0.15",
       "1.6.1.0",
@@ -200,8 +200,8 @@
     ]
   },
   "windows": {
-    "stable": "",
-    "preview": "",
+    "stable": "1.21.3.01",
+    "preview": "1.21.20.22",
     "versions": [
       "1.6.0.15",
       "1.6.1.0",

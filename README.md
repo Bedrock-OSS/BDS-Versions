@@ -4,10 +4,10 @@
   <tr><th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
 <tr><td><strong>Stable</strong></td>
 <td>
-<code>1.21.31.04</code>
+<code>1.21.40.03</code>
 </td>
 <td>
-<code>1.21.31.04</code>
+<code>1.21.50.24</code>
 </td>
 </tr>
 <tr><td><strong>Preview</strong></td>
@@ -15,7 +15,7 @@
 <code>1.21.50.24</code>
 </td>
 <td>
-<code>1.21.50.24</code>
+<code></code>
 </td>
 </tr>
 </table>

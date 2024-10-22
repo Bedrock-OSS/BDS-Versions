@@ -7,7 +7,7 @@
 <code>1.21.40.03</code>
 </td>
 <td>
-<code>1.21.50.24</code>
+<code>1.21.40.03</code>
 </td>
 </tr>
 <tr><td><strong>Preview</strong></td>
@@ -15,7 +15,7 @@
 <code>1.21.50.24</code>
 </td>
 <td>
-<code></code>
+<code>1.21.50.24</code>
 </td>
 </tr>
 </table>

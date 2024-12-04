@@ -41,5 +41,6 @@ wget ${DOWNLOAD_URL}
 ## People using this repo
 - [@DarkGamerYT - MinecraftUpdatesBot](https://github.com/DarkGamerYT/MinecraftUpdatesBot)
 - [Gamemode One](https://github.com/Gamemode-One)
-- [Bedrock APIs - BDS-Docs](https://github.com/Bedrock-APIs/bds-docs)
+- [Bedrock APIs - BDS Metadata Generator](https://github.com/Bedrock-APIs/bds-docs)
+- [bedrock APIs - GitHub Action - BDS Download](https://github.com/Bedrock-APIs/bds-download)
 

@@ -12,7 +12,7 @@
 </tr>
 <tr><td><strong>Preview</strong></td>
 <td>
-<code>1.21.100.23</code>
+<code>1.21.100.24</code>
 </td>
 <td>
 <code>1.21.100.24</code>

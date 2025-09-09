@@ -1,0 +1,7 @@
+Minecraft Bedrock Dedicated Server
+
+- Make sure to check the how-to document that comes with this release
+- Log any issues at https://bugs.mojang.com/projects/BDS/issues
+
+For the latest updates and change notes for main builds of Minecraft, please see https://aka.ms/MinecraftUpdate.
+For the latest updates and change notes for preview builds of Minecraft, please see https://aka.ms/MinecraftBeta.

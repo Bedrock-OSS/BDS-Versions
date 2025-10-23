@@ -126,6 +126,7 @@ jq -n \
   --argjson WINDOWS_PREVIEW_VERSIONS "${WINDOWS_PREVIEW_VERSIONS_JSON_SORT}" \
 '
 {
+  "cdn_root": "https://www.minecraft.net/bedrockdedicatedserver",
   "linux": {
     "stable": ($linux_stable),
     "preview": ($linux_preview),

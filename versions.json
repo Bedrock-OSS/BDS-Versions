@@ -2,7 +2,7 @@
   "cdn_root": "https://www.minecraft.net/bedrockdedicatedserver",
   "linux": {
     "stable": "1.21.131.1",
-    "preview": "1.26.0.26",
+    "preview": "",
     "versions": [
       "1.6.0.15",
       "1.6.1.0",

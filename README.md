@@ -4,7 +4,7 @@
   <tr><th></th><th><strong>Linux</strong></th><th><strong>Windows</strong></th></tr>
 <tr><td><strong>Stable</strong></td>
 <td>
-<code>1.26.14.1</code>
+<code>1.26.20.4</code>
 </td>
 <td>
 <code>1.26.14.1</code>
